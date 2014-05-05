@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Landy.Page Documentation</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+ 
+ <div class="wrapper">
+ 	<div class="wrapperInner clearfix">
+ <ol id="menu">
+ 	<li><a href="#logo">Changing Logo's</a></li>
+ 	<li><a href="#header">Changing Header Text</a></li>
+ 	<li><a href="#buttons">Changing Download Buttons</a></li>
+ 	<li><a href="#slides">Changing iPhone Slides</a></li>
+ 	<li><a href="#quotes">Changing Quotes</a></li>
+ 	<li><a href="#feature">Changing Features Text</a></li>
+ 	<li><a href="#footer">Changing Footer Links</a></li>
+ 	<li><a href="#css">Changing CSS</a></li>
+ 	<li><a href="#analytics">Google Analytics</a></li>
+ 	<li><a href="#resource">More Resources</a></li>
+ </ol>	
+
+<div id="main"> 	   
+<h1>Thanks for buying Landy</h1>
+<p>The Landy.Page theme is a simple HTML theme specially designed for smart phone app landing pages. Landy is not only a responsive theme meaning it is optimised for multiple device sizes, Landy is also retina ready, meaning no more blurry images on your HiDPI and retina displays. Remember Retina or HiDPI requires images twice the size of normal images.</p>
+
+
+
+<h1 id="how">How to use Landy?</h1>
+<p>Landy was built for non-web designer and developers, and in a few moments you can customise Landy to suite your own app and brand.</p>
+
+
+
+
+<h3 id="logo">Changing Logo's</h3>
+<p>Landy pulls it's logo's for the img folder, simply replace the logo files with your own, it's easiest to just overwrite the existing logo files with your own logo. Remember to include a HiDPI version (logo@2x.png) that is twice the size as your standard logo image as well as your standard logo, this way when displayed on a HiDPI screen your logo will stay sharp as a tack.</p>
+
+ <p>Because Landy is Retina ready you may have to update the size of the allocated area for your logo to avoid distortion or cropping (only if bigger than the current examples). To do this open the main.css file and look for <pre>.header-container h1 </pre> Here you can see height and width properties. Match the height and width to suite your logo at standard size.</p>
+<p>The third step is to update the text in the HTML document to assist with your SEO. Look for the H1 tag like you see below, 
+<pre><- LOGO Replace // Replace Text with your App name for SEO, text is replaced with logo.png file  -> &lt;h1>Landy.App&lt;/h1></pre> 
+This text helps with your SEO even though the H1 tag hides the text to display your logo. Remember the logo is in the footer area also.</p>
+
+
+
+<h3 id="header">Changing Header Text</h3>
+<p>The header area has a designated area for "Call to action" text which helps drive people to either download your app or sign up to your mail list.Simply look in the HTML for</p> <pre> <- START HEADER TEXT  -></pre> and replace the filler text with your own compelling copy/text. For best visual results try to keep the same approximate length of text as what is in the filler.</p>
+
+
+
+<h3 id="buttons">Changing Download Buttons</h3>
+<p>Landy comes with four (4) main buttons for your app stores. By default Apple and Android buttons are used.To update these to Windows or BlackBerry simply look in the HTML for</p>  <pre><- INSERT STORES // Insert Desired App Store Buttons / Extra buttons in img folder  -></pre> <p>and update the image name on the appropriate button <pre>img/appStore_Btn@2x.png</pre> to the desired image button name in the img folder. If you want to take out one of the button simply delete the non-desired store button HTML line, example below, <pre>&lt;li&gt;a href="#Insert Link Here">&lt;img src="img/appStore_Btn@2x.png" alt="Download App" /&gt;&lt;/a&gt;&lt;/li&gt;</pre></p>
+<p>Remember to update the href="Your Link Here" with your actual link, and to update the ALT text to your own desired text. There are also an additional link area under the buttons where you can add more text based download links.</p>
+
+
+<h3 id="buttons">Changing Sign up Form</h3>
+<p>The sign up version of Landy is for when your app isn't ready for download yet, but you want to capture people interest/emails when ready for launch.</p>
+<p>To update the sign up field, simply update the action attached to the form by looking in the HTML for, <pre>action="#Insert Your Link"</pre> and update #Insert Your Link to your prefered action link or what your EDM system (Mailchimp / Campaign Monitor) provides you.  </p>
+
+
+<h3 id="slides">Changing iPhone Slides</h3>
+<p>As this theme is built for HiDPI and retina displays, the simplest way to deal with screen shots in the iPhone mockup is to insert the HiDPI versions into the slideshow and let the theme resize them for you. </p>
+<p>To do this simple save your screenshots at a size of 488 x 868 pixels, In the HTML look for the comments <pre><- INSERT IPHONE SLIDE  -></pre>and change the image name from <pre>slideMock@2x.png</pre> to your own image name. Remember this theme uses an iPhone 5 for mockups, so a slightly larger screen area is available for screenshots. If you want to remove a slide then just delete the line of HTML</p>  <pre>&lt;li>&lt;img src="img/slideMock@2x.png" alt="Mock Slide" />&lt;/li></pre> <p>or to add a new slide just copy an additional line of HTML the same as the 3 examples.</p>
+
+
+
+<h3 id="quotes">Changing Quotes</h3>
+<p>In the HTML look for the comments labled <pre><- INSERT QUOTE  -></pre> and change the filler text to your own awesome quotes / testimonials. If you want to remove a quote then just delete the line of HTML <pre>&lt;li>“ Where has this app been all my iPhone owning life?”&lt;/li></pre> and to add another quote just copy an additional line of HTML the same as the 3 examples.</p>
+
+
+
+<h3 id="feature">Changing Features Text</h3>
+<p>Landy allows you to highlight 3 awesome reasons to buy your app or show features of your app. In your HTML file look for <pre><- INSERT FEATURE TEXT  -> </pre> and update the wording accordingly. Abit of design advice, it's best to try and keep each column a similar length.</p>
+
+
+
+<h3 id="footer">Changing Footer Links</h3>
+<p>A number of links can be put into the footer of Landy to direct your users elsewhere. To update these simply update the anchor text and paste your link between the <pre>href="#Insert Link Here"</pre>To remove links as needed, simple delete the whole line of HTML not being used. </p>
+
+
+
+<h1 id="css">Changing CSS</h1>
+<p>Whilst Landy is pretty kick ass already you may want to get advanced and change the colours of backgrounds, links, text etc. You can do all of this by editing the main.css file. The main.css file is well commented to highlight to most common changeable aspects like link colours etc.</p>
+
+
+<h1 id="analytics">Google Analytics</h1>
+<p>At the very bottom of the HTML you will find a Google Analytics code snippet to use. Simply replace the UA ID number with your own to set up Google Analytics and start receiving stats and figures about your webpage, or delete this whole section and copy and paste in the code snippet Google provides.</p>
+<p>Also DO NOT FORGET to update the title and description of your web page. You can find these at the very top of the HTML file, just look for</p>
+<pre>&lt;title>Landy.Page&lt;/title><br/> &lt;meta name="description" content=""></pre> and update them to you own apps name and a description between the content="" for search engines.
+
+<h4 id="resource">Retina Resource</h4>
+<p>For detailed information about designing for HiDPI or Retina websites, I suggest taking a look at: <a href="http://retinafy.me" target="_blank"> retinafy.me</a></p>
+
+</div>
+</div>
+</div>
+    </body>
+</html>
