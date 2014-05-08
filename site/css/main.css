@@ -36,7 +36,7 @@ body { font: 16px/26px Helvetica, Helvetica Neue, Arial;  -webkit-font-smoothing
 	text-indent: -10000em;
 	position: relative;
 	width: 271px; /* Adjust Width for Logo if needed */
-	height: 93px; /* Adjust Height for Logo if needed */
+	height: 200px; /* Adjust Height for Logo if needed */
 	background: url(../img/logo.png) no-repeat center 0; /* Change Your Logo Name */
 	background-size: 100%;
 	margin: 0 auto;
