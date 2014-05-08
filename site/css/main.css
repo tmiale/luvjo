@@ -22,9 +22,9 @@ body { font: 16px/26px Helvetica, Helvetica Neue, Arial;  -webkit-font-smoothing
 
 
 .header-container {
-    background: #f3f8fc; /* Adjust Background colour of header */
-    color: #525b60;  /* Adjust colour of header text */
-	text-shadow: 1px 1px 0 #ffffff;
+    background: #663300; /* Adjust Background colour of header */
+    color: #ffffff;  /* Adjust colour of header text */
+	text-shadow: 1px 1px 0 #000000;
 	padding-top: 50px;
 }
 
@@ -56,7 +56,7 @@ body { font: 16px/26px Helvetica, Helvetica Neue, Arial;  -webkit-font-smoothing
 
 
 .header-container h3{
-	color: #2e353a;
+	color: #ffd7c9;
 	font-weight: normal;
 	font-size: 1.6em;
 	line-height: 1.2;
